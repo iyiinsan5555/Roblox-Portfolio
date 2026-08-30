@@ -4,7 +4,7 @@ const ctx = canvas.getContext('2d');
 let particles = [];
 const mouse = { x: null, y: null, radius: 150 };
 
-// 1. Initial Target Color is White (255, 255, 255)
+// Initial Target Color is White (255, 255, 255)
 let globalTargetColor = { r: 255, g: 255, b: 255 };
 
 class Pixel {
@@ -59,7 +59,7 @@ class Pixel {
     }
 }
 
-// 2. SECTION COLORS: Matches the IDs in your HTML
+// SECTION COLORS: Matches the IDs in your HTML
 const sectionColors = {
     'home': { r: 255, g: 255, b: 255 },      // White
     'about': { r: 255, g: 0, b: 122 },     // Neon Pink
@@ -68,7 +68,7 @@ const sectionColors = {
     'contact': { r: 180, g: 100, b: 255 }  // Purple
 };
 
-// 3. SCROLL DETECTION: Changes globalTargetColor based on visible section
+// SCROLL DETECTION: Changes globalTargetColor based on visible section
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -143,7 +143,6 @@ const words = [
     "Software Engineering Student",
     "Continuous Learner",
     "Focused on Improvement",
-    "Open to Free Commissions (For Now)"
 ];
 
 let wordIndex = 0;
